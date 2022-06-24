@@ -1,0 +1,65 @@
+@use "../base/mixins";
+@media only screen and (max-width: 375px) {
+  // =========================================================================
+  // Layout
+  // =========================================================================
+
+  .l-comments {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .l-main {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  .l-reviews {
+    height: 25rem;
+    .c-reviews {
+      width: 100%;
+    }
+  }
+
+  // =========================================================================
+  // Components
+  // =========================================================================
+
+  .c-comments {
+    width: 100%;
+    padding: 3.8rem;
+    &__info {
+      height: 3.8rem;
+    }
+    &__name {
+      font-size: 1.8rem;
+    }
+    &__status {
+      font-size: 1.6rem;
+    }
+    &__text {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  .c-presentation {
+    @include mixins.custom-layout-flex(column, center, center);
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      width: 98%;
+
+      text-align: center;
+      font-size: 1.8rem;
+    }
+  }
+
+  .c-reviews {
+    @include mixins.custom-layout-flex(column, center, space-between);
+
+    height: 7rem;
+  }
+}

@@ -1,0 +1,39 @@
+@use "../base/mixins";
+@use "../base/extends";
+
+.l-comments {
+  @extend %u-display-flex,
+    %u-flex-direction-row,
+    %u-align-start,
+    %u-justify-space-between;
+
+  flex-wrap: wrap;
+
+  width: 96rem;
+  padding: 3rem 0;
+  height: 30rem;
+
+}
+
+.c-comments {
+  width: 29rem;
+  margin: 1rem 0;
+}
+
+.c-comments-1 {
+  @media only screen and (min-width: 960px) {
+    align-self: start;
+  }
+}
+
+.c-comments-2 {
+  @media only screen and (min-width: 960px) {
+    align-self: center;
+  }
+}
+
+.c-comments-3 {
+  @media only screen and (min-width: 960px) {
+    align-self: end;
+  }
+}

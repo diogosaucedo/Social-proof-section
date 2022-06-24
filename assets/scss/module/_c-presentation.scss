@@ -1,0 +1,17 @@
+@use "../base/colors";
+@use "../base/mixins";
+
+.c-presentation {
+  width: 100%;
+
+  &__title {
+    @include mixins.custom-font(4.6rem, 700, colors.$very-dark-magenta);
+  }
+
+  &__text {
+    padding: 3rem 0;
+
+    @include mixins.custom-font(1.6rem, 400, colors.$dark-grayish-magenta);
+    line-height: 2rem;
+  }
+}

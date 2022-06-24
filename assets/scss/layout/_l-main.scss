@@ -1,0 +1,17 @@
+@use "../base/mixins";
+@use "../base/extends";
+
+.l-main {
+  @extend %u-display-flex,
+    %u-flex-direction-row,
+    %u-align-center,
+    %u-justify-space-between;
+
+  flex-wrap: wrap;
+
+  width: 96rem;
+
+  .c-presentation {
+    width: 40rem;
+  }
+}

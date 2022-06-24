@@ -1,0 +1,31 @@
+@use "../base/mixins";
+@use "../base/extends";
+
+.l-reviews {
+  @extend %u-display-flex,
+    %u-flex-direction-column,
+    %u-align-start,
+    %u-justify-space-between;
+
+  width: 48rem;
+  height: 17rem;
+
+  .c-reviews {
+    width: 40rem;
+  }
+  .c-reviews-1 {
+    @media only screen and (min-width: 960px) {
+      align-self: start;
+    }
+  }
+  .c-reviews-2 {
+    @media only screen and (min-width: 960px) {
+      align-self: center;
+    }
+  }
+  .c-reviews-3 {
+    @media only screen and (min-width: 960px) {
+      align-self: end;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "mixins";
+@use "colors";
+@use "extends";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  @extend %u-display-flex,
+    %u-flex-direction-row,
+    %u-align-center,
+    %u-justify-center;
+
+  min-height: 100vh;
+
+  font-family: "League Spartan", sans-serif;
+  background-color: colors.$light-grayish-magenta;
+}

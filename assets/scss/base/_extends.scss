@@ -1,0 +1,35 @@
+%u-display-flex {
+  display: flex;
+}
+
+%u-flex-direction-row {
+  flex-direction: row;
+}
+
+%u-flex-direction-column {
+  flex-direction: column;
+}
+
+%u-align-start {
+  align-items: flex-start;
+}
+
+%u-align-center {
+  align-items: center;
+}
+
+%u-justify-start {
+  justify-content: start;
+}
+
+%u-justify-center {
+  justify-content: center;
+}
+
+%u-justify-space-between {
+  justify-content: space-between;
+}
+
+%u-justify-space-around {
+  justify-content: space-around;
+}

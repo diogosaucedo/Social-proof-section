@@ -1,0 +1,49 @@
+@use "../base/mixins";
+@use "../base/extends";
+@use "../base/colors";
+
+.c-comments {
+  padding: 2.1rem;
+  border-radius: 0.8rem;
+
+  background-color: colors.$very-dark-magenta;
+
+  &__user {
+    @extend %u-display-flex,
+      %u-flex-direction-row,
+      %u-align-center,
+      %u-justify-start;
+
+    padding: 1rem 0;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 3.5rem;
+  }
+
+  &__info {
+    @extend %u-display-flex,
+      %u-flex-direction-column,
+      %u-align-start,
+      %u-justify-space-between;
+
+    height: 2.5rem;
+    padding: 0 1.5rem;
+  }
+
+  &__name {
+    @include mixins.custom-font(1.4rem, 700, colors.$white);
+  }
+
+  &__status {
+    @include mixins.custom-font(1.4rem, 400, colors.$soft-pink);
+  }
+
+  &__text {
+    padding: 1rem 0;
+
+    @include mixins.custom-font(1.4rem, 400, colors.$white);
+    line-height: 2rem;
+  }
+}
